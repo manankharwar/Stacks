@@ -1,3 +1,5 @@
+package stacks;
+
 import java.util.EmptyStackException;
 
 public class Stack {
@@ -26,7 +28,7 @@ public class Stack {
 
     public void push(int element){
         if(isFull()){
-            throw new StackOverflowError("Stack is full");
+            throw new StackOverflowError("stacks.Stack is full");
         }
         array[index] = element;
         index++;
